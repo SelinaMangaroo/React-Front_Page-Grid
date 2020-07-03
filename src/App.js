@@ -26,11 +26,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {this.state.isLoading ? (
-          <h2 style={{ textAlign: "center" }}>Loading...</h2>
-        ) : (
-          <GridList gridItems={this.state.items} />
-        )}
+        <div className="container">
+          {this.state.isLoading ? (
+            <h2 style={{ textAlign: "center" }}>Loading...</h2>
+          ) : (
+            <GridList gridItems={this.state.items} />
+          )}
+        </div>
       </div>
     );
   }
